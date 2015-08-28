@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Security.Cryptography;
 
-namespace KCIS.App.Utilities
+namespace App.Utilities
 {
     public static class SecurityHelper
     {
@@ -18,7 +18,8 @@ namespace KCIS.App.Utilities
 
             decryptText = decryptText.Split(';')[0];
 
-            if (decryptText == "KCIS.App")
+            if (decryptText == "
+App")
             {
                 result = true;
             }
@@ -44,7 +45,7 @@ namespace KCIS.App.Utilities
         {
             string publicKey = @"<RSAKeyValue><Modulus>xJrxw5tlnwPYM+CiE6BuMJRZJbrUQlmd+jV4khMRJ7nzDSAMeX/J+YWhSePHww6p0koz4NsUWCT5x5LJZ3s4KGdjNwRRA8dxCL80xWD79KaI+hQcR247Kh3AKS1XatwshW/1QQoQ1Dwg4JCrS/VdxYUgrSO2WCmkaEiDWhcbe28=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>";
 
-            string encryptText = RsaEncrypt("KCIS.App;" + DateTime.Now.Ticks.ToString(), publicKey);
+            string encryptText = RsaEncrypt("App;" + DateTime.Now.Ticks.ToString(), publicKey);
 
             return encryptText;
         }

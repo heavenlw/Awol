@@ -7,7 +7,7 @@ using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Collections;
-namespace KCIS.App.Utilities
+namespace App.Utilities
 {
     public class DatabaseHelper
     {

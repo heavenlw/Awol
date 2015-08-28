@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace KCIS.App.Utilities
+namespace App.Utilities
 {
     public static class TextHelper
     {
