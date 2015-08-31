@@ -139,5 +139,4 @@ namespace Awol
                 return H[m, n];    // 编辑距离  
             }
         }
-    }
 }
