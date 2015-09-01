@@ -2,3 +2,7 @@ E:\Github_Code\Awol\Awol\Awol\bin\Debug\Awol.dll
 E:\Github_Code\Awol\Awol\Awol\bin\Debug\Awol.pdb
 E:\Github_Code\Awol\Awol\Awol\obj\Debug\Awol.dll
 E:\Github_Code\Awol\Awol\Awol\obj\Debug\Awol.pdb
+E:\Github_Code\Awol\Awol\Awol\bin\Debug\HtmlAgilityPack.dll
+E:\Github_Code\Awol\Awol\Awol\bin\Debug\HtmlAgilityPack.pdb
+E:\Github_Code\Awol\Awol\Awol\bin\Debug\HtmlAgilityPack.xml
+E:\Github_Code\Awol\Awol\Awol\obj\Debug\Awol.csprojResolveAssemblyReference.cache
