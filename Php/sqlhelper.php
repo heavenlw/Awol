@@ -815,7 +815,7 @@ class mysql {
 
         if (preg_replace("/https?:\/\/([^\:\/]+).*/i", "\\1", $_SERVER['HTTP_REFERER']) !== preg_replace("/([^\:]+).*/", "\\1", $_SERVER['HTTP_HOST'])) {
 
-            header("Location: http://www.dareng.com");
+            header("Location: awol");
 
             exit();
 
