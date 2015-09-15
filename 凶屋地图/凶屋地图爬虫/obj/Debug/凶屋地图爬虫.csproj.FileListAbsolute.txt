@@ -1,0 +1,12 @@
+E:\C#\凶屋地图\凶屋地图爬虫\bin\Debug\凶屋地图爬虫.exe.config
+E:\C#\凶屋地图\凶屋地图爬虫\bin\Debug\凶屋地图爬虫.exe
+E:\C#\凶屋地图\凶屋地图爬虫\bin\Debug\凶屋地图爬虫.pdb
+E:\C#\凶屋地图\凶屋地图爬虫\bin\Debug\MySql.Data.dll
+E:\C#\凶屋地图\凶屋地图爬虫\obj\Debug\凶屋地图爬虫.csprojResolveAssemblyReference.cache
+E:\C#\凶屋地图\凶屋地图爬虫\obj\Debug\凶屋地图爬虫.exe
+E:\C#\凶屋地图\凶屋地图爬虫\obj\Debug\凶屋地图爬虫.pdb
+E:\C#\凶屋地图\凶屋地图爬虫\bin\Debug\Awol.dll
+E:\C#\凶屋地图\凶屋地图爬虫\bin\Debug\HtmlAgilityPack.dll
+E:\C#\凶屋地图\凶屋地图爬虫\bin\Debug\Awol.pdb
+E:\C#\凶屋地图\凶屋地图爬虫\bin\Debug\HtmlAgilityPack.pdb
+E:\C#\凶屋地图\凶屋地图爬虫\bin\Debug\HtmlAgilityPack.xml

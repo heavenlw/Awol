@@ -1,0 +1,7 @@
+E:\C#\凶屋地图\凶屋地图\bin\Debug\凶屋地图.exe.config
+E:\C#\凶屋地图\凶屋地图\bin\Debug\凶屋地图.exe
+E:\C#\凶屋地图\凶屋地图\bin\Debug\凶屋地图.pdb
+E:\C#\凶屋地图\凶屋地图\bin\Debug\MySql.Data.dll
+E:\C#\凶屋地图\凶屋地图\obj\Debug\凶屋地图地区.csprojResolveAssemblyReference.cache
+E:\C#\凶屋地图\凶屋地图\obj\Debug\凶屋地图.exe
+E:\C#\凶屋地图\凶屋地图\obj\Debug\凶屋地图.pdb

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "凶屋地图地区", "凶屋地图\凶屋地图地区.csproj", "{99EE3A10-60F1-4ADF-80FF-8CA756E07D0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "凶屋地图爬虫", "凶屋地图爬虫\凶屋地图爬虫.csproj", "{2618FC20-EB19-4259-B6A7-D14E89E1173C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "凶屋地图地区Api", "凶屋地图地区Api\凶屋地图地区Api.csproj", "{13F933C6-7008-4B35-8827-D54755962942}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99EE3A10-60F1-4ADF-80FF-8CA756E07D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99EE3A10-60F1-4ADF-80FF-8CA756E07D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99EE3A10-60F1-4ADF-80FF-8CA756E07D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99EE3A10-60F1-4ADF-80FF-8CA756E07D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2618FC20-EB19-4259-B6A7-D14E89E1173C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2618FC20-EB19-4259-B6A7-D14E89E1173C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2618FC20-EB19-4259-B6A7-D14E89E1173C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2618FC20-EB19-4259-B6A7-D14E89E1173C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13F933C6-7008-4B35-8827-D54755962942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F933C6-7008-4B35-8827-D54755962942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F933C6-7008-4B35-8827-D54755962942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F933C6-7008-4B35-8827-D54755962942}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
