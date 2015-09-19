@@ -1,0 +1,47 @@
+<Alloy>
+	<TabGroup>
+		<Tab title="News" icon="KS_nav_ui.png">
+			<Window title="News">
+				<Label>I am Window 1</Label>
+			</Window>
+		</Tab>
+		<Tab title="Events" icon="KS_nav_views.png">
+			<Window title="Events">
+				<Label><TableView onClick="tableClick"> 
+					<TableViewSection headerTitle=" ">
+                    <TableViewRow title="University-wide Activities" fid="uwide"/> </TableViewSection>
+                    <TableViewSection headerTitle=" ">
+                    <TableViewRow title="Faculty of Science" fid="sci"/>
+                    </TableViewSection> </TableView>
+					</Label>
+			</Window>
+		</Tab>
+		<Tab title="Map" icon="KS_nav_ui.png">
+		<Window title="Map" narBarHidden="true">
+				navController.navigationBar.hidden = YES;
+				<Label><Module id="mapView" module="ti.map" method="createView" userLocation="true"/>
+				<Annotation id='acHall' />
+				<Button title="Move" bottom="10dp" onClick="btClick" />
+					</Label>
+			</Window>
+		</Tab>
+		<Tab title="Facilities" icon="KS_nav_ui.png">
+			<Window title="Facilities">
+				<Label>I am Window 1</Label>
+			</Window>
+		</Tab>
+		<Tab title="About Us" icon="KS_nav_ui.png">
+			<Window title="About Us">
+				<Label><TableView>
+<TableViewSection headerTitle="About HKBU">
+<TableViewRow>
+<TextArea value = "Hong Kong Baptist University (HKBU) is a publicly funded
+tertiary institution with a Christian education heritage \n" /> 
+</TableViewRow>
+</TableViewSection> </TableView>
+<TextArea id="textArea2"></TextArea>
+					</Label>
+			</Window>
+		</Tab>
+	</TabGroup>
+</Alloy>
