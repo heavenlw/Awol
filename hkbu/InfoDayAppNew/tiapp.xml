@@ -3,21 +3,21 @@
     <id>hk.edu.hkbu.comp.infoday2015</id>
     <name>InfoDayAppNew</name>
     <version>1.0</version>
-    <publisher>Sherry</publisher>
+    <publisher>awol.name</publisher>
     <url>http://www.google.com</url>
-    <description/>
-    <copyright>2015 by Sherry</copyright>
+    <description>undefined</description>
+    <copyright>awol.name</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>ef2ee3d9-2274-4beb-9555-60d77e69ed46</guid>
+    <guid>a4190e12-20ec-44c1-9444-8f86fcda95c7</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <ios>
         <plist>
             <dict>
-            	<key>NSLocationWhenInUseUsageDescription</key> 
-            	<string>Your String Here</string>
+                <key>NSLocationWhenInUseUsageDescription</key>
+                <string>Your String Here</string>
                 <key>UISupportedInterfaceOrientations~iphone</key>
                 <array>
                     <string>UIInterfaceOrientationPortrait</string>
@@ -40,7 +40,6 @@
             </dict>
         </plist>
     </ios>
-    
     <android xmlns:android="http://schemas.android.com/apk/res/android"/>
     <mobileweb>
         <precache/>
@@ -56,8 +55,8 @@
         <module platform="android">ti.map</module>
     </modules>
     <deployment-targets>
-        <target device="android">false</target>
-        <target device="ipad">false</target>
+        <target device="android">true</target>
+        <target device="ipad">true</target>
         <target device="iphone">true</target>
         <target device="mobileweb">false</target>
         <target device="windows">false</target>
@@ -69,18 +68,18 @@
     <property name="appc-app-id" type="string">55f6725e15c6960c17017029</property>
     <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
     <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
-    <property name="acs-oauth-secret-development" type="string">UvgoI4GlufFtmQDdPb2OhMBIYKEVvzYg</property>
-    <property name="acs-oauth-key-development" type="string">m1POXgHgf08cKnBXItWlYqsREIcTX9S5</property>
-    <property name="acs-api-key-development" type="string">C1uGtGUMg1JYXD41kIxVpih24DfROm4V</property>
+    <property name="acs-oauth-secret-development" type="string">Gc99Rq4w9kvZhf6LhaOXSHJgKdo6KGFD</property>
+    <property name="acs-oauth-key-development" type="string">JWwn32IpYVRaWhbJyBMagRLkanu3CvZd</property>
+    <property name="acs-api-key-development" type="string">UaAKZfuQ2yQXbuXFYkRlnYT6tyG0wQyK</property>
     <property name="acs-username-development" type="string">appc_app_user_dev</property>
-    <property name="acs-password-development" type="string">crYp0DHodUanxkmD7g</property>
+    <property name="acs-password-development" type="string">jlgF6BhRccmICsyo4B</property>
     <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
     <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
-    <property name="acs-oauth-secret-production" type="string">o4ITpQXhrAZYFZFdJmiwFz8Cv39y2MRK</property>
-    <property name="acs-oauth-key-production" type="string">mNemEA9f3JRn8JHjIDAgnTJO3eiTVuPj</property>
-    <property name="acs-api-key-production" type="string">xEMiZes5ayR72NI92IF9FqngF48YpSLm</property>
+    <property name="acs-oauth-secret-production" type="string">nGLD2p130BYZh79tBCuAQ50mU6bPYQEW</property>
+    <property name="acs-oauth-key-production" type="string">bLeVbRSYsPpA4u2wVc5dwoDjDri3PpRo</property>
+    <property name="acs-api-key-production" type="string">WdzIB2UqqM7GlAtpspdoIAusoacgseaG</property>
     <property name="acs-username-production" type="string">appc_app_user</property>
-    <property name="acs-password-production" type="string">iaPuAypW3wLP1HBhj8</property>
-    <property name="appc-org-id" type="string">100066432</property>
-    <property name="appc-creator-user-id" type="string">f7c334c3-6747-4d96-9d06-a323bc996e72</property>
+    <property name="acs-password-production" type="string">Tx6OBRvVyrknb4zTho</property>
+    <property name="appc-org-id" type="string">100065919</property>
+    <property name="appc-creator-user-id" type="string">5f73cf4c-9c5c-4608-b972-f8c2ccc60159</property>
 </ti:app>

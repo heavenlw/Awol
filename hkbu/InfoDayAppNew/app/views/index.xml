@@ -1,33 +1,45 @@
 <Alloy>
+	<Collection src="webNews"/>
 	<TabGroup>
-		<Tab title="News" icon="KS_nav_ui.png">
-			<Window title="News">
-				<Label>I am Window 1</Label>
+		<Tab title="News" icon="KS_nav_ui.png" id="mainTab" >
+		<Window title = "main News">
+			<TableView dataCollection="webNews" dataTransform="transformFunction">
+				<TableViewRow layout="vertical">
+					<ImageView image="{thumbnail}" top="20dp"/>
+					<Label text="{title}" bottom="20dp"/>
+					</TableViewRow>
+			</TableView>
 			</Window>
 		</Tab>
-		<Tab title="Events" icon="KS_nav_views.png">
+		<Tab title="Events" icon="KS_nav_views.png" id="eventTab">
 			<Window title="Events">
-				<Label><TableView onClick="tableClick"> 
-					<TableViewSection headerTitle=" ">
-                    <TableViewRow title="University-wide Activities" fid="uwide"/> </TableViewSection>
+				
+					<TableView onClick="tableClick"> 
+					<TableViewSection headerTitle="">
+                    <TableViewRow title="University-wide Activities" fid="University-wide Activities"/> </TableViewSection>
                     <TableViewSection headerTitle=" ">
                     <TableViewRow title="Faculty of Science" fid="sci"/>
-                    </TableViewSection> </TableView>
-					</Label>
+                    </TableViewSection> 
+                    </TableView>
+					
 			</Window>
 		</Tab>
-		<Tab title="Map" icon="KS_nav_ui.png">
-		<Window title="Map" narBarHidden="true">
-				navController.navigationBar.hidden = YES;
-				<Label><Module id="mapView" module="ti.map" method="createView" userLocation="true"/>
-				<Annotation id='acHall' />
-				<Button title="Move" bottom="10dp" onClick="btClick" />
-					</Label>
+		<Tab title="Map" icon="KS_nav_ui.png" id="mapTab">
+		<Window title="Map" narBarHidden="true" >
+				
+					<Module id="mapView" module="ti.map" method="createView" userLocation="true" onClick="mapClicked">
+				   <Annotation id='acHall' />
+				
+				<Button title="Move" bottom="10dp"  onClick="btClick" />
+				</Module>
+					
 			</Window>
 		</Tab>
 		<Tab title="Facilities" icon="KS_nav_ui.png">
 			<Window title="Facilities">
-				<Label>I am Window 1</Label>
+				  <ImageView id = "imageView" />
+      <Button title="Take a Picture" onClick="takePicture" bottom = "60dp" />
+      <Button title="Load a Picture" onClick="loadPicture" bottom = "30dp" />
 			</Window>
 		</Tab>
 		<Tab title="About Us" icon="KS_nav_ui.png">

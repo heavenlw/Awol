@@ -32,3 +32,10 @@ longitudeDelta: 0.006 }
 latitude: 22.341072,
 longitude: 114.179645, title: "AC Hall",
 subtitle: "香港浸会大学大学会堂" }
+
+
+
+"Annotation[platform=ios]": 
+{
+     rightButton: Titanium.UI.iPhone.SystemButton.DISCLOSURE
+}
