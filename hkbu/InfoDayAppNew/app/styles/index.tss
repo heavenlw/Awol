@@ -39,3 +39,9 @@ subtitle: "香港浸会大学大学会堂" }
 {
      rightButton: Titanium.UI.iPhone.SystemButton.DISCLOSURE
 }
+
+"TableViewRow[platform=android]": 
+{
+	  font: {   fontSize: "20sp" }, 
+	  left: "20dp" 
+}  

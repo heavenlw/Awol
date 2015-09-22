@@ -16,6 +16,7 @@ exports.definition = {
 		return Model;
 	},
 	extendCollection: function(Collection) {
+        alert("collection");
 		_.extend(Collection.prototype, {
 			// extended functions and properties go here
 

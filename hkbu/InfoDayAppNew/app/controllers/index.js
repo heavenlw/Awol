@@ -9,21 +9,14 @@ latitudeDelta:0.001,
 longitudeDelta:0.001
 };
 };
-
 function tableClick(e) {
-console.log("Table Clicked"); 
+alert("Table Clicked"); 
 var eventListController =Alloy.createController('eventList',{fid:e.row.fid});
 $.eventTab.open(eventListController.getView());
-
-
 };
 
 
-function labelClick(e) {
-console.log("label Clicked`````````````````````````````````````"); 
 
-
-};
 
 Alloy.Collections.webNews.fetch();
 
@@ -38,44 +31,6 @@ function transformFunction(model)
 }
 
 $.index.open();
-
-function btClick(e){
-	console.log("ghggggggg");
-	$.mapView.region={
-		latitude:22.339468,
-longitude:114.181879,
-latitudeDelta:0.001,
-longitudeDelta:0.001
-};
-};
-
-function tableClick(e) {
-console.log("Table Clicked"); 
-var eventListController =Alloy.createController('eventList',{fid:e.row.fid});
-$.eventTab.open(eventListController.getView());
-
-
-};
-
-
-function labelClick(e) {
-console.log("label Clicked`````````````````````````````````````"); 
-
-
-};
-
-Alloy.Collections.webNews.fetch();
-
-function transformFunction(model)
-{
-	var transform = model.toJSON();
-	if(transform.thumbnail==null)
-	{
-		transform.thumbnail ="";
-	}
-	return transform;
-}
-
 
 function mapClicked(e) {
      if (e.clicksource == 'rightButton' && e.annotation.id == 'acHall')
@@ -95,20 +50,7 @@ longitudeDelta:0.001
 };
 };
 
-function tableClick(e) {
-console.log("Table Clicked"); 
-var eventListController =Alloy.createController('eventList',{fid:e.row.fid});
-$.eventTab.open(eventListController.getView());
 
-
-};
-
-
-function labelClick(e) {
-console.log("label Clicked`````````````````````````````````````"); 
-
-
-};
 
 Alloy.Collections.webNews.fetch();
 
@@ -141,20 +83,6 @@ longitudeDelta:0.001
 };
 };
 
-function tableClick(e) {
-console.log("Table Clicked"); 
-var eventListController =Alloy.createController('eventList',{fid:e.row.fid});
-$.eventTab.open(eventListController.getView());
-
-
-};
-
-
-function labelClick(e) {
-console.log("label Clicked`````````````````````````````````````"); 
-
-
-};
 
 Alloy.Collections.webNews.fetch();
 
