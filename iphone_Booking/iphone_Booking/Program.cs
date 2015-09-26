@@ -22,6 +22,7 @@ namespace iphone_Booking
                 string html = Awol.WebHelper.GetResponseStr(requestScore, "utf-8", null, null);
                 MatchCollection matches = Regex.Matches(html, "\"R.*?\"MKUD2ZP/A\".*?}", RegexOptions.Singleline);
                 HandleHelper handlehelper = new HandleHelper();
+                handlehelper.AddMail();
                 foreach (Match mac in matches)
                 {
 

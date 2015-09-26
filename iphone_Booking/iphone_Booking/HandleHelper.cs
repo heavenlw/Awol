@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
+using System.Net.Mail;
 using System.Text.RegularExpressions;
 namespace iphone_Booking
 {
     internal class HandleHelper
     {
+        List<Mail> mail_list = new List<Mail>();
+        
         List<IPhone> iphone_list = new List<IPhone>();
         string phone_size = Settings.Default.Iphone;
         List<IPhone> have_list = new List<IPhone>();
@@ -24,6 +28,15 @@ namespace iphone_Booking
                 iphone_list.Add(iphone);
             }
 
+        }
+
+        internal void AddMail()
+        {
+            Mail mail = new Mail();
+            mail.Name = "heavenlw@msn.cn";
+            mail.DateTime = DateTime.Now;
+            mail.Status = 1;
+            mail_list.Add(mail);
         }
 
         internal void Handle()
@@ -62,7 +75,58 @@ namespace iphone_Booking
         {
             foreach (IPhone iphone in have_list)
             {
+                if (iphone.Color == "玫瑰金")
+                {
+                   SendMessage(iphone, "玫瑰金来了~！");
+                }
+                if (iphone.Color == "金" && iphone.Storge == "64g")
+                {
+                    SendMessage(iphone, "64g 金色来了~！");
+                }
+                if (iphone.Color == "金" && iphone.Size== "IPhone6s Plus")
+
+                {
+                    SendMessage(iphone, "金色PLus来了~！");
+                }
+                if (iphone.Size.Contains("Plus"))
+                    {
+                    Console.WriteLine(iphone.Size + iphone.Storge + iphone.Color + "---" + iphone.Place+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                }
+                else
                 Console.WriteLine(iphone.Size+iphone.Storge+iphone.Color+"---"+iphone.Place);
+            }
+        }
+
+        private void SendMessage(IPhone iphone,string title)
+        {
+            try
+            {
+                foreach (Mail mail in mail_list)
+                {
+                    if (mail.Status != 1)
+                    {
+                        if ((DateTime.Now - mail.DateTime).Minutes > 3)
+                        {
+                            mail.Status = 1;
+                        }
+                    }
+                    if (mail.Status == 1)
+                    {
+
+                        MailMessage emailMessage;
+                        MailMessage message = new MailMessage("550804648@qq.com",mail.Name, title, iphone.Place + iphone.Storge);
+                        string fuwuqi = "smtp.qq.com";
+
+                        SmtpClient smtp = new SmtpClient(fuwuqi);
+                        smtp.Credentials = new NetworkCredential("", "");
+                        smtp.Send(message);
+                        mail.Status = -1;
+                    }
+                }
+            }
+            catch (Exception t)
+            {
+                Console.WriteLine(t.Message);
             }
         }
     }
