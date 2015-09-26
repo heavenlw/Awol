@@ -1,0 +1,32 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="iphone_Booking" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Iphone" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MKQK2ZP/A:16g:银;
+MKQL2ZP/A:16g:金;
+MKQJ2ZP/A:16g:灰;
+MKQM2ZP/A:16g:玫瑰金;
+MKQP2ZP/A:64g:银;
+MKQQ2ZP/A:64g:金;
+MKQN2ZP/A:64g:灰;
+MKQR2ZP/A:64g:玫瑰金;
+MKQU2ZP/A:128g:银;
+MKQV2ZP/A:128g:金;
+MKQT2ZP/A:128g:灰;
+MKQW2ZP/A:128g:玫瑰金;
+MKU22ZP/A:16g:银;
+MKU32ZP/A:16g:金;
+MKU12ZP/A:16g:灰;
+MKU52ZP/A:16g:玫瑰金;
+MKU72ZP/A:64g:银;
+MKU82ZP/A:64g:金;
+MKU62ZP/A:64g:灰;
+MKU92ZP/A:64g:玫瑰金;
+MKUE2ZP/A:128g:银;
+MKUF2ZP/A:128g:金;
+MKUD2ZP/A:128g:灰;
+MKUG2ZP/A:128g:玫瑰金;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
