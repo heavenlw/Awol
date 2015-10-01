@@ -11,3 +11,4 @@ E:\Github_Code\Awol\iphone_Booking\iphone_Booking\bin\Release\HtmlAgilityPack.xm
 E:\Github_Code\Awol\iphone_Booking\iphone_Booking\obj\Release\iphone_Booking.csprojResolveAssemblyReference.cache
 E:\Github_Code\Awol\iphone_Booking\iphone_Booking\obj\Release\iphone_Booking.exe
 E:\Github_Code\Awol\iphone_Booking\iphone_Booking\obj\Release\iphone_Booking.pdb
+E:\Github_Code\Awol\iphone_Booking\iphone_Booking\bin\Release\MySql.Data.dll

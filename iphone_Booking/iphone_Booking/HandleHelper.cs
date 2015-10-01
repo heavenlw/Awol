@@ -14,6 +14,8 @@ namespace iphone_Booking
         List<IPhone> have_list = new List<IPhone>();
         internal void GetDetail(string html)
         {
+          
+
             string place = Regex.Match(html, "(R.*?)\"", RegexOptions.Singleline).Groups[1].ToString();
             MatchCollection matches = Regex.Matches(html, "\"(MK.*?)\".*?\"(.*?)\"", RegexOptions.Singleline);
             
@@ -28,6 +30,12 @@ namespace iphone_Booking
                 iphone_list.Add(iphone);
             }
 
+        }
+
+        internal void Clear()
+        {
+            iphone_list.Clear();
+            have_list.Clear();
         }
 
         internal void AddMail()
@@ -77,23 +85,30 @@ namespace iphone_Booking
             {
                 if (iphone.Color == "玫瑰金")
                 {
-                   SendMessage(iphone, "玫瑰金来了~！");
+                    //Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                    Console.WriteLine(iphone.Size + iphone.Storge + iphone.Color + "---" + iphone.Place);
+                    // SendMessage(iphone, "玫瑰金来了~！");
+                    Console.Beep(700, 500);
+                    //MysqlHelper mysqlhelper = new MysqlHelper();
+                    //mysqlhelper.Insert(iphone);
                 }
                 if (iphone.Color == "金" && iphone.Storge == "64g")
                 {
-                    SendMessage(iphone, "64g 金色来了~！");
+                    //Console.Beep(500, 300);
+                    //SendMessage(iphone, "64g 金色来了~！");
                 }
                 if (iphone.Color == "金" && iphone.Size== "IPhone6s Plus")
 
                 {
-                    SendMessage(iphone, "金色PLus来了~！");
+                    //SendMessage(iphone, "金色PLus来了~！");
                 }
                 if (iphone.Size.Contains("Plus"))
-                    {
-                    Console.WriteLine(iphone.Size + iphone.Storge + iphone.Color + "---" + iphone.Place+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                {
+                   // Console.WriteLine(iphone.Size + iphone.Storge + iphone.Color + "---" + iphone.Place);
                 }
                 else
-                Console.WriteLine(iphone.Size+iphone.Storge+iphone.Color+"---"+iphone.Place);
+                { }
+                //Console.WriteLine(iphone.Size+iphone.Storge+iphone.Color+"---"+iphone.Place);
             }
         }
 
@@ -108,17 +123,18 @@ namespace iphone_Booking
                         if ((DateTime.Now - mail.DateTime).Minutes > 3)
                         {
                             mail.Status = 1;
+                            mail.DateTime = DateTime.Now;
                         }
                     }
                     if (mail.Status == 1)
                     {
 
                         MailMessage emailMessage;
-                        MailMessage message = new MailMessage("550804648@qq.com",mail.Name, title, iphone.Place + iphone.Storge);
-                        string fuwuqi = "smtp.qq.com";
+                        MailMessage message = new MailMessage("heavenlw@sina.com",mail.Name, title, iphone.Place + iphone.Storge);
+                        string fuwuqi = "smtp.sina.com";
 
                         SmtpClient smtp = new SmtpClient(fuwuqi);
-                        smtp.Credentials = new NetworkCredential("", "");
+                        smtp.Credentials = new NetworkCredential("heavenlw@sina.com", "550804648");
                         smtp.Send(message);
                         mail.Status = -1;
                     }

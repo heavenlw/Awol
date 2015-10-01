@@ -57,5 +57,30 @@ MKUG2ZP/A:128g:玫瑰金;")]
                 this["Iphone"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;uid=root;pwd=123456;database=awol;Charset=utf8")]
+        public string DBCon_local {
+            get {
+                return ((string)(this["DBCon_local"]));
+            }
+            set {
+                this["DBCon_local"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Database=acsm_24ff61fb817a5a0;Data Source=ap-cdbr-azure-east-c.cloudapp.net;User " +
+            "Id=b5fd689373a896;Password=3170f905")]
+        public string DBCon_Azure {
+            get {
+                return ((string)(this["DBCon_Azure"]));
+            }
+            set {
+                this["DBCon_Azure"] = value;
+            }
+        }
     }
 }

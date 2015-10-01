@@ -14,14 +14,16 @@ namespace iphone_Booking
     {
         static void Main(string[] args)
         {
+            HandleHelper handlehelper = new HandleHelper();
             while (true)
             {
+                handlehelper.Clear();
                 Console.WriteLine("start" + DateTime.Now);
                 string url = "https://reserve.cdn-apple.com/HK/zh_HK/reserve/iPhone/availability.json";
                 HttpWebRequest requestScore = (HttpWebRequest)WebRequest.Create(url);
                 string html = Awol.WebHelper.GetResponseStr(requestScore, "utf-8", null, null);
                 MatchCollection matches = Regex.Matches(html, "\"R.*?\"MKUD2ZP/A\".*?}", RegexOptions.Singleline);
-                HandleHelper handlehelper = new HandleHelper();
+               
                 handlehelper.AddMail();
                 foreach (Match mac in matches)
                 {
@@ -30,7 +32,7 @@ namespace iphone_Booking
                 }
                 handlehelper.Handle();
                 handlehelper.Result();
-                Thread.Sleep(5000);
+                Thread.Sleep(3000);
 
             }
         }
